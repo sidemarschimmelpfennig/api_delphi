@@ -12,7 +12,7 @@ uses
 var
   App: THorse;
 begin
-  App := THorse.Create();
+  App := THorse.Create( 9000 );
 
   App.Get('/ping',
     procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc )
@@ -20,5 +20,5 @@ begin
       Res.Send('pong');
     end);
 
-  App.Listen(9000);
+  App.Listen();
 end.
