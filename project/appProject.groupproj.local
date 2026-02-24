@@ -2,6 +2,6 @@
 <BorlandProject>
 	<Transactions/>
 	<Default.Personality>
-		<Projects ActiveProject="D:\workspace\projects\api_delphi_biblioteca\project\api\api.dproj"/>
+		<Projects ActiveProject="D:\workspace\projects\api_delphi_biblioteca\project\rest_api\rest_api.dproj"/>
 	</Default.Personality>
 </BorlandProject>

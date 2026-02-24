@@ -1,4 +1,4 @@
-program api;
+program rest_api;
 
 {$APPTYPE CONSOLE}
 

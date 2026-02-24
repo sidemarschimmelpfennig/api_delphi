@@ -3,7 +3,7 @@
         <ProjectGuid>{CA0B3935-ADF9-4369-B71D-5834538F588A}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="api\api.dproj">
+        <Projects Include="rest_api\rest_api.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -14,23 +14,23 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="api">
-        <MSBuild Projects="api\api.dproj"/>
+    <Target Name="rest_api">
+        <MSBuild Projects="rest_api\rest_api.dproj"/>
     </Target>
-    <Target Name="api:Clean">
-        <MSBuild Projects="api\api.dproj" Targets="Clean"/>
+    <Target Name="rest_api:Clean">
+        <MSBuild Projects="rest_api\rest_api.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="api:Make">
-        <MSBuild Projects="api\api.dproj" Targets="Make"/>
+    <Target Name="rest_api:Make">
+        <MSBuild Projects="rest_api\rest_api.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="api"/>
+        <CallTarget Targets="rest_api"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="api:Clean"/>
+        <CallTarget Targets="rest_api:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="api:Make"/>
+        <CallTarget Targets="rest_api:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
